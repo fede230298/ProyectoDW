@@ -20,7 +20,20 @@
     background-color: midnightblue;
 }
 
+.animacion{
+    animation-duration: 2s;
+    animation-name: entrada;
+}
 
+@keyframes entrada{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
 
 .content{
     grid-area: content;
@@ -193,7 +206,7 @@ img.nav-media{
 
 .footer{
     grid-area: footer;
-    background-color: white;
+    background-image: linear-gradient(midnightblue, white);
     text-align: center;
     margin-bottom: 0%;
 }

@@ -1,0 +1,319 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "content"
+    "."
+    "servicios"
+    "."
+    "nosotros"
+    "."
+    "contacto"
+    "."
+    "carreras"
+    "."
+    "news"
+    "footer";
+    grid-template-columns: 100%;
+    margin: 0px;
+    background-color: midnightblue;
+}
+
+
+
+.content{
+    grid-area: content;
+}
+
+.nav {
+    grid-area: nav;
+    
+}
+
+.nav-background{
+    background-color: white;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 100%;
+}
+
+.nav-h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+}
+
+.nav-list{
+    color: orange;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+    text-align: left;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+ul li{
+    display: inline;
+}
+
+.nav-list-element{
+    text-decoration: none;
+    display: inline;
+}
+
+.nav-list-element:hover{
+    color: white;
+    background-color: orangered;
+}
+
+img.nav-logo{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+}
+
+img.nav-media{
+    width: 15px;
+    height: 15px;
+}
+
+.header{
+    grid-area: header;
+    margin: 5px;
+}
+
+.header-text{
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+}
+
+.index-body{
+    margin: 10px;
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.index-body-title{
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+}
+
+.index-body-text{
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.index-body-more-box{
+    text-align: center;
+}
+
+.index-body-more{
+    font: bold;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+.index-body-more:hover{
+    font-size: 18px;
+    background-color: lightsalmon;
+
+}
+
+.img-servicios{
+    grid-area: img-servicios;
+}
+
+.img-servicios-center{
+    justify-self: center;
+}
+
+.servicios{
+    grid-area: servicios;
+    margin: 10px;
+}
+
+.nosotros {
+    grid-area: nosotros;
+    margin: 10px;
+}
+
+.contacto {
+    grid-area: contacto;
+    margin: 10px;
+}
+
+.carreras {
+    grid-area: carreras;
+    margin: 10px;
+}
+
+.news{
+    grid-area: news;
+}
+
+.news-title{
+    text-align: center;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+.news-contact{
+    text-align: center;
+    font-size: 25px;
+}
+
+.news-border{
+    margin: auto;
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: lightblue;
+    
+}
+
+.news-center{
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+img.footer_logo {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    display: block;
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.table-content{
+    color: white;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px){
+
+    .nav-h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 10px;
+        line-height: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    img.nav-logo{
+        width: 90px;
+        height: 90px;
+    }
+
+    .table-responsive {
+        width: 100%;
+        margin: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
+    .table-responsive > .table > thead > tr > th,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+            "nav header header"
+            "nav content content"
+            "nav . servicios"
+            "nav nosotros ."
+            "nav . contacto"
+            "nav carreras ."
+            "nav news news"
+            "nav footer footer";
+        
+        grid-template-columns: 200px 1fr 1fr;
+        margin-top: 0%;
+        margin-left: 0%; 
+    }
+
+    ul li{
+        display: list-item;
+    }
+    
+    .nav-list{
+        display: flow;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        line-height: 30px;
+        text-align: left;
+        align-items: left;        
+    }
+
+    img.nav-logo{
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: auto;
+    }
+
+    .nav-h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+}
+
+
+
+
+
+
+

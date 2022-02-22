@@ -1,75 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
 </head>
 
-<body id="grilla">
-  <section class="nav nav-background">
-    <div>
-        <div>
-            <h1 class="nav-h1">MT Linguam Traducciones</h1>
+<body class="bg-light">
+  
+  <!--Navbar-->
+  <nav class=" navbar navbar-expand-md navbar-dark bg-mnblue fixed-top navbar-main">
+    <div class="container">
+      <!--Logo-->
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/MT_Linguam.png" alt="">
+      </a>
+
+      <div class="navbar-brand">
+        MT Traducciones
+      </div>
+    
+    <!--Menu desplegable-->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Barra de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Menu-->
+      <div class="collapse navbar-collapse change">
+        <div class="nav ml-auto text-white flex-column flex-md-row change">
+          <a href="../index.html" class="nav-link change">Inicio</a>
+          <a href="servicios.html" class="nav-link active">Servicios</a>
+          <a href="contacto.html" class="nav-link change">Contacto</a>
+          <a href="carreras.html" class="nav-link change">Carreras</a>
+          <a href="nosotros.html" class="nav-link change">Nosotros</a>
         </div>
-        
-        <div class="nav-logo">
-          <a href="../index.html"><img class="nav-logo" src="../img/MT_Linguam.jpg" alt="MT Linguam Traducciones"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!--Header-->
+  <div class="container animacion">
+    <header class="row align-items-center header-main animacion">
+      <div class="col-md-12">
+        <!--Título-->
+        <h1 class="display-4 titulo-principal">
+          Contratá los mejores servicios!
+        </h1>
+        <!--Trabajos-->
+        <p class="text-muted-fw-light subtitulo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit autem, laboriosam unde temporibus sint tempora, debitis impedit, fugit adipisci necessitatibus nulla consequuntur eligendi. Unde cum veniam iste maxime. Alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sunt, accusamus assumenda reiciendis quos amet ipsam excepturi inventore laudantium soluta recusandae unde. Ipsam adipisci in quidem, non vero nam fugiat?
+        </p>
+        <!--Redes sociales-->
+        <div class="d-none d-md-block">
+          <!--Facebook-->
+          <a href="" target="_blank">
+            <img src="" alt="">
+          </a>
+          <!--Instagram-->
+          <a href="" target="_blank">
+            <img src="" alt="">
+          </a>
+          <!--LinkedIn-->
+          <a href="" target="_blank">
+            <img src="" alt="">
+          </a>
         </div>
-
-        <div>
-            <nav>
-                <div>
-                    <ul class="nav-list">
-                        <li><a class="nav-list-element" href="../index.html">Inicio</a></li>
-                        <li><a class="nav-list-element" href="../pages/servicios.html">Servicios</a></li>
-                        <li><a class="nav-list-element" href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a class="nav-list-element" href="../pages/contacto.html">Contacto</a></li>
-                        <li><a class="nav-list-element" href="../pages/carreras.html">Carreras</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <!--<div>
-          <li><a href="https://facebook.com"><img class="nav-media"  src="./img/fb.png" alt="Siguenos en Facebook!"></a></li>
-        </div>-->
-
-    </div>
-</section>
-  <section class="header animacion">
-    <div>
-      <h2 class="index-body-title">Servicios</h2>
-      <p class="index-body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse laborum dignissimos sit consequatur? Voluptate, sapiente quam praesentium alias exercitationem repellendus similique officia molestias expedita dolores rerum. Deleniti, nihil nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus nemo nisi totam amet iste perspiciatis nam, ratione consequatur vero? Similique corrupti unde pariatur optio libero impedit rem et eos.</p>
-    </div>
-  </section>
-  <section class="content animacion">
-    <div class="table-responsive">
-    <!-- Título tabla -->
-    <h1 class="index-body-title">TARIFAS</h1>
-    <table>
-      
-        <tr class="index-body-text"> <!-- Títulos columnas -->
-          <th><strong>CASO 1</strong></th>
-          <th><strong>CASO 2</strong></th>
-          <th><strong>CASO 3</strong></th>
-        </tr>
-
-      <tr class="table-content"> <!-- Info por columna -->
-        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis doloribus at sint nisi ut fuga cupiditate id eaque, itaque iste. Sit ab quia perferendis dicta, maxime obcaecati deserunt voluptatibus enim?</td>
-        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos enim doloremque, architecto optio itaque ab. Ducimus nulla, eaque odit excepturi, sit ipsa provident quasi odio ipsam doloremque similique corrupti natus.</td>
-        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem inventore ipsa placeat, vitae dicta itaque! Amet voluptatum, eos, nobis unde perferendis voluptas inventore suscipit atque illum minima ut! Cupiditate!</td>
-      </tr>
-    </div>
-    </table>
-  </section>
-</body>
-<footer class="footer"> <!-- footer + imagen -->
-  <div>
-      <h5>MT Traducciones</h5>
+      </div>
+    </header>
   </div>
-<img class="footer_logo" src="../img/MT_Linguam.png" alt="">
-</footer>
+  
+
+  <!--Inicio-->
+  <div class="container animacion">
+    <hr>
+    <!--Cuerpo-->
+    <section class="row justify-content-around text-center">
+      <h2 class="col-12 display-4 mb-3 titulo-secundario">
+        Nuestros Servicios
+      </h2>
+      <!--Selecciones-->
+      <!--Selección 1-->
+      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light">
+        <!--Icono-->
+        <!--Titulo-->
+        <h3 class="text-capitalize">
+          Traducción
+        </h3>
+        <!--Descripción-->
+        <p class="text-muted">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquam omnis voluptatum maiores esse minima!
+        </p>
+        <!--Boton-->
+        <a href="../pages/contacto.html" class="btn btn-outline-warning">Consultar</a>
+      </article>
+      <!--Selección 2-->
+      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light">
+        <!--Icono-->
+        <!--Titulo-->
+        <h3 class="text-capitalize">
+          Interpretación
+        </h3>
+        <!--Descripción-->
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere, qui voluptatum esse laudantium a?
+        </p>
+        <!--Boton-->
+        <a href="../pages/contacto.html" class="btn btn-outline-warning">Consultar</a>
+      </article>
+        <!--Selección 3-->
+      <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light">
+        <!--Icono-->
+        <!--Titulo-->
+        <h3 class="text-capitalize">
+          Copywriting
+        </h3>
+        <!--Descripción-->
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora consectetur consequuntur assumenda cupiditate officiis.
+        </p>
+        <!--Boton-->
+        <a href="../pages/contacto.html" class="btn btn-outline-warning">Consultar</a>
+      </article>
+    </section>
+    <hr>
+  </div>
+  
+  <!--Footer-->
+  <footer class="bg-mnblue text-center p-4">
+    &#169; MT Traducciones. Todos los derechos reservados
+  </footer>
+
+  <!--Javascript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>

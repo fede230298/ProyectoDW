@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 </head>
+ 
+<body class="bg-light">
+  <!--Navbar-->
+  <nav class=" navbar navbar-expand-md navbar-dark bg-mnblue fixed-top navbar-main">
+    <div class="container">
+      <!--Logo-->
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/MT_Linguam.png" alt="">
+      </a>
 
-<body class="body__background letrasBlancas">
-  <body id="grilla">
-    <section class="nav nav-background">
-      <div>
-          <div>
-              <h1 class="nav-h1">MT Linguam Traducciones</h1>
-          </div>
-          
-          <div class="nav-logo">
-            <a href="../index.html"><img class="nav-logo" src="../img/MT_Linguam.jpg" alt="MT Linguam Traducciones"></a>
-          </div>
-  
-          <div>
-              <nav>
-                  <div>
-                      <ul class="nav-list">
-                          <li><a class="nav-list-element" href="../index.html">Inicio</a></li>
-                          <li><a class="nav-list-element" href="../pages/servicios.html">Servicios</a></li>
-                          <li><a class="nav-list-element" href="../pages/nosotros.html">Nosotros</a></li>
-                          <li><a class="nav-list-element" href="../pages/contacto.html">Contacto</a></li>
-                          <li><a class="nav-list-element" href="../pages/carreras.html">Carreras</a></li>
-                      </ul>
-                  </div>
-              </nav>
-          </div>
-  
-          <!--<div>
-            <li><a href="https://facebook.com"><img class="nav-media"  src="./img/fb.png" alt="Siguenos en Facebook!"></a></li>
-          </div>-->
-  
+      <div class="navbar-brand">
+        MT Traducciones
       </div>
+    
+    <!--Menu desplegable-->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Barra de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Menu-->
+      <div class="collapse navbar-collapse change">
+        <div class="nav ml-auto text-white flex-column flex-md-row change">
+          <a href="../index.html" class="nav-link change">Inicio</a>
+          <a href="servicios.html" class="nav-link change">Servicios</a>
+          <a href="contacto.html" class="nav-link active">Contacto</a>
+          <a href="carreras.html" class="nav-link change">Carreras</a>
+          <a href="nosotros.html" class="nav-link change">Nosotros</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Fromulario-->
+  <section class="container">
+    <h3 class="text-uppercase text-center">Formulario de contacto</h3>
+    <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas, provident velit iure aliquid nisi, facilis corrupti ea praesentium iste tempora ipsam facere sint fuga inventore excepturi veritatis quisquam! Aliquam?</p>
+    <div class="row">
+      <div class="col-6">
+        <form action="">
+          <div class="form-group row">
+            <label for="" class="col-2 col-form-label">Nombre:</label>
+            <input type="text" placeholder="Escriba su nombre" class="form-control col-10" name="" id="">
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-2 col-form-label">Apellido:</label>
+            <input type="text" placeholder="Escriba su apellido" class="form-control col-10" name="" id="">
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-2 col-form-label">Email:</label>
+            <input type="email" placeholder="Escriba su email" class="form-control col-10" name="" id="">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-warning">Enviar</button>
+          </div>
+          <div class="form-group">
+            <input type>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
-  <section class="header news-border animacion">    
+  <!--<section class="header news-border animacion">    
     <legend class="index-body-title">Contactanos!</legend>
         <div class="news-contact news-border">
         <div>
@@ -63,12 +92,15 @@
         </div>
             <input type="submit" value="Enviar">
         </div>
-  </section>
-</body>
-<footer class="footer"> <!-- footer + imagen -->
-  <div>
-      <h5>MT Traducciones</h5>
-  </div>
-<img class="footer_logo" src="../img/MT_Linguam.png" alt="">
-</footer> 
+  </section>!-->
+
+  <!--Footer-->
+  <footer class="bg-mnblue text-center p-4">
+    &#169; MT Traducciones. Todos los derechos reservados
+  </footer>
+
+  <!--Javascript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body> 
 </html>

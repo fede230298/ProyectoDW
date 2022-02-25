@@ -41,31 +41,61 @@
     </div>
   </nav>
   <!--Fromulario-->
-  <section class="container">
-    <h3 class="text-uppercase text-center">Formulario de contacto</h3>
-    <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas, provident velit iure aliquid nisi, facilis corrupti ea praesentium iste tempora ipsam facere sint fuga inventore excepturi veritatis quisquam! Aliquam?</p>
-    <div class="row">
-      <div class="col-6">
-        <form action="">
-          <div class="form-group row">
-            <label for="" class="col-2 col-form-label">Nombre:</label>
-            <input type="text" placeholder="Escriba su nombre" class="form-control col-10" name="" id="">
-          </div>
-          <div class="form-group row">
-            <label for="" class="col-2 col-form-label">Apellido:</label>
-            <input type="text" placeholder="Escriba su apellido" class="form-control col-10" name="" id="">
-          </div>
-          <div class="form-group row">
-            <label for="" class="col-2 col-form-label">Email:</label>
-            <input type="email" placeholder="Escriba su email" class="form-control col-10" name="" id="">
-          </div>
-          <div class="form-group">
-            <button class="btn btn-warning">Enviar</button>
-          </div>
-          <div class="form-group">
-            <input type>
-          </div>
-        </form>
+  <section class="container animacion">
+    <div class="row align-items-center section-main col-12">
+      <h3 class="text-center col-12 display-4 titulo-principal">Formulario de contacto</h3>
+      <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas, provident velit iure aliquid nisi, facilis corrupti ea praesentium iste tempora ipsam facere sint fuga inventore excepturi veritatis quisquam! Aliquam?</p>
+      <div class="row col-12">
+        <div class="col-12">
+          <form action="">
+            <div class="form-group row">
+              <label for="tipo" class="col-3 col-form-label">Motivo de contacto: </label>
+              <select name="tipo">
+                <option value="0">Elija una opción</option>
+                <optgroup label="Servicios">
+                  <option value="1">Traducción</option>
+                  <option value="2">Interpretación</option>
+                  <option value="3">Copywriting</option>
+                </optgroup>
+                <optgroup label="Trabajos">
+                  <option value="10">Traductor Freelance</option>
+                  <option value="11">Interprete Freelance</option>
+                  <option value="12">Escritor Freelance</option>
+                  <option value="13">Otros</option>
+                </optgroup>
+                <optgroup label="Carreras en idioma">
+                  <option value="20">Orientación científica</option>
+                  <option value="21">Orientación técnica</option>
+                  <option value="22">Orientación literaria</option>
+                  <option value="23">Orientación en marketing</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-3 col-form-label">Nombre:</label>
+              <input type="text" placeholder="Escriba su nombre" class="form-control col-8" name="" id="">
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-3 col-form-label">Apellido:</label>
+              <input type="text" placeholder="Escriba su apellido" class="form-control col-8" name="" id="">
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-3 col-form-label">Email:</label>
+              <input type="email" placeholder="Escriba su email" class="form-control col-8" name="" id="">
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-3 col-form-label">Mensaje:</label>
+              <textarea class="form-control col-8"></textarea>
+            </div>
+            <div>
+              <input type="checkbox" name="newsletter" id="newsletter" value="si">
+              <label for="newsletter">Quiero recibir el Newsletter semanal</label>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-warning">Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>

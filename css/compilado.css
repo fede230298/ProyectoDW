@@ -1,0 +1,18 @@
+/*Titulos*/
+.titulo {
+  text-align: center; }
+  .titulo-principal {
+    color: orange; }
+  .titulo-secundario {
+    color: midnightblue; }
+  .titulo-subtitulo {
+    color: burlywood; }
+
+/*Nav*/
+.navbar-brand > img {
+  width: 55px; }
+
+.navbar-main .active {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 9px; }

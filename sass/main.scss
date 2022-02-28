@@ -1,17 +1,36 @@
+/*Variables*/
+$azul: midnightblue;
+$naranja: orange;
+$naranja-claro: burlywood;
+$blanco: white;
+
 /*Titulos*/
 .titulo{
-    text-align: center;
 
     &-principal{
-        color: orange;
+        color: $naranja;
+        text-align: center;
     }
     &-secundario{
-        color: midnightblue;
+        color: $azul;
+        text-align: center;
     }
     &-subtitulo{
-        color: burlywood;
+        color: $naranja-claro;
+        text-align: center;
     }
     
+}
+
+/*Estilos generales*/
+a{
+    color: inherit;
+}
+
+.container {
+    >.row{
+    margin-bottom: 3rem;
+    }
 }
 
 /*Nav*/
@@ -22,7 +41,92 @@
     
     &-main .active{
         text-decoration: underline;
-        text-decoration-color: orange;
+        text-decoration-color: $naranja;
         text-underline-offset: 9px;
     }
+}
+
+/*Clientes*/
+.sec-clientes{
+    >a{
+        transition: filter 0.4s;
+        &:hover{
+            filter: opacity(0.5);
+        }
+    }
+}
+
+/*Estilos*/
+.header-main{
+    min-height: 100vh;
+}
+
+.section-main{
+    margin-top: 6rem;
+    min-height: auto;
+}
+
+/*Background*/
+.bg{
+    &-mnblue{
+        background-color: $azul;
+        color: $blanco;
+    }
+    &-mnbluelight{
+        background-color: $azul/0.3;
+        filter: opacity(0.50)
+    }
+}
+
+/*mediaquery*/
+@media screen and (max-width: 426px) {
+    body{
+        margin-top: 4rem;
+    }
+
+    .titulo{
+        &-principal{
+        font-size: 4rem;
+        }
+
+        &-secundario{
+        font-size: 2.5rem;
+        }
+    }
+
+    .header-main{
+        min-height: 5vh;
+    }
+}
+
+/*Animacion*/
+.animacion{
+    animation-duration: 2s;
+    animation-name: entrada;
+}
+
+@keyframes entrada{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Imagenes*/
+img.nav-logo{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+}
+
+img.carreras{
+    width: 200px;
+    height: 200px;
+    float: inline-end;
+    margin: auto;
+    border: 0.5rem solid $azul;
 }

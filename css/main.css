@@ -19,6 +19,14 @@ img.nav-logo{
     margin: auto;
 }
 
+img.carreras{
+    width: 200px;
+    height: 200px;
+    float: inline-end;
+    margin: auto;
+    border: 0.5rem solid midnightblue;
+}
+
 .navbar-main .active{
     text-decoration: underline;
     text-decoration-color: orange;
@@ -100,7 +108,3 @@ img.nav-logo{
     }
 }
 
-.social{
-    width: 30px;
-    height: 30px;
-}

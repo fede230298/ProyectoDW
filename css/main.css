@@ -106,5 +106,9 @@ img.carreras{
     .header-main{
         min-height: 5vh;
     }
+
+    .display-4{
+        font-size: 2.5rem;
+    }
 }
 

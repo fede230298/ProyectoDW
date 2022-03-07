@@ -3,6 +3,9 @@
 .titulo-principal {
   color: orange;
   text-align: center; }
+  .titulo-principal-variante {
+    color: orange;
+    text-align: center; }
 
 .titulo-secundario {
   color: midnightblue;
@@ -57,10 +60,41 @@ a {
     margin-top: 4rem; }
   .titulo-principal {
     font-size: 4rem; }
+    .titulo-principal-variante {
+      font-size: 3rem; }
   .titulo-secundario {
     font-size: 2.5rem; }
   .header-main {
-    min-height: 5vh; } }
+    min-height: 5vh; }
+  img.carreras {
+    width: 100px;
+    height: 100px;
+    float: inline-end;
+    margin: auto;
+    border: 0.25rem solid midnightblue; } }
+
+@media screen and (min-width: 426px) {
+  img.carreras {
+    width: 200px;
+    height: 200px;
+    float: inline-end;
+    margin: auto;
+    border: 0.5rem solid midnightblue; } }
+
+.menu-imagen {
+  background-image: url("https://ep01.epimg.net/elviajero/imagenes/2018/07/31/album/1533036263_013678_1533077023_noticia_normal.jpg");
+  width: auto;
+  background-size: cover;
+  position: relative; }
+
+.menu-imagen::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.70;
+  filter: blur(30px); }
 
 /*Animacion*/
 .animacion {
@@ -79,10 +113,3 @@ img.nav-logo {
   height: 70px;
   display: block;
   margin: auto; }
-
-img.carreras {
-  width: 200px;
-  height: 200px;
-  float: inline-end;
-  margin: auto;
-  border: 0.5rem solid midnightblue; }

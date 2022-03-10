@@ -113,7 +113,8 @@ footer a {
 .boton-naranja {
   color: #000;
   background-color: #ffa500;
-  border-color: #ffa500; }
+  border-color: #ffa500;
+  transition: 0.5s; }
   .boton-naranja:hover {
     color: #000;
     opacity: 0.8; }
@@ -129,23 +130,22 @@ footer a {
 #team img {
   margin-top: -30px; }
 
-#team .card {
-  border-radius: 0;
-  box-shadow: 5px 5px 15px #808080;
-  transition: all 0.3s ease-in; }
+.card {
+  transition: 1s; }
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px #191970; }
+  .card-name {
+    color: #ffa500; }
+  .card-puesto {
+    color: #deb887; }
 
-#team .card:hover {
-  background: #191970;
-  color: #ffffff;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 5px 5px 10px #808080; }
-
-.card-name {
-  color: #ffa500; }
-
-.card-puesto {
-  color: #deb887; }
+/*Carreras*/
+.carrera {
+  transition: 1s; }
+  .carrera:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 10px 10px #ffa500; }
 
 #personal {
   margin-top: -30px; }
@@ -163,6 +163,9 @@ footer a {
 .section-main {
   margin-top: 6rem;
   min-height: auto; }
+
+.shadow {
+  box-shadow: 10px 10px 5px #808080; }
 
 /*Background*/
 .bg-mnblue {
@@ -194,7 +197,9 @@ footer a {
     height: 100px;
     float: inline-end;
     margin: auto;
-    border: 0.25rem solid #191970; } }
+    border: 0.25rem solid #191970; }
+  footer a {
+    font-size: 0%; } }
 
 @media screen and (min-width: 426px) {
   img.carreras {

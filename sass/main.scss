@@ -141,6 +141,7 @@ footer a{
     color: $negro;
     background-color: $naranja;
     border-color: $naranja;
+    transition: 0.5s;
     &:hover{
         color: $negro;
         opacity: 0.8;
@@ -161,26 +162,29 @@ footer a{
     img{
         margin-top: -30px;
     }
-    .card{
-        border-radius: 0;
-        box-shadow: 5px 5px 15px $gris;
-        transition: all 0.3s ease-in;
-    }
-    .card:hover{
-        background: $azul;
-        color: $blanco;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 5px 5px 10px $gris;
-    }
-
 }
 .card{
+    transition: 1s;
+
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 10px 10px 10px $azul;
+    }
+
     &-name{
         color: $naranja;
     }
     &-puesto{
         color: $naranja-claro;
+    }
+}
+
+/*Carreras*/
+.carrera{
+    transition: 1s;
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 10px 10px 10px $naranja;
     }
 }
 
@@ -206,6 +210,11 @@ footer a{
 .section-main{
     margin-top: 6rem;
     min-height: auto;
+}
+
+.shadow{
+    box-shadow: 10px 10px 5px $gris;
+
 }
 
 /*Background*/
@@ -256,6 +265,10 @@ footer a{
         float: inline-end;
         margin: auto;
         border: 0.25rem solid $azul;
+    }
+
+    footer a{
+        font-size: 0%;
     }
 
 }
@@ -315,7 +328,6 @@ img.nav-logo{
 img.red-social{
     width: 1rem;
     height: 1rem;
-
 }
 
 img.clientes{

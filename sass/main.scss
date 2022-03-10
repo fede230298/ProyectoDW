@@ -49,16 +49,36 @@ $colores: (
     }
     &-subtitulo{
         color: $naranja-claro;
+        font-size: 1.5rem;
         text-align: center;
+    }
+
+    &-oscuro{
+        color: $naranja;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
     }
     
 }
 
 /*Estilos generales*/
-a{
-    color: inherit;
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav a{
+    color: $blanco;
     &:hover{
-        color: $negro;
+        color: $naranja;
+        text-decoration: none;
+    }
+}
+
+footer a{
+    color: $blanco;
+    &:hover{
+        color: $blanco;
         text-decoration: none;
     }
 }
@@ -136,6 +156,37 @@ a{
     pointer-events: none;
 }
 
+/*Tarjetas*/
+#team{
+    img{
+        margin-top: -30px;
+    }
+    .card{
+        border-radius: 0;
+        box-shadow: 5px 5px 15px $gris;
+        transition: all 0.3s ease-in;
+    }
+    .card:hover{
+        background: $azul;
+        color: $blanco;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 5px 5px 10px $gris;
+    }
+
+}
+.card{
+    &-name{
+        color: $naranja;
+    }
+    &-puesto{
+        color: $naranja-claro;
+    }
+}
+
+#personal{
+    margin-top: -30px;
+}
 
 /*Clientes*/
 .sec-clientes{
@@ -162,6 +213,9 @@ a{
     &-mnblue{
         background-color: $azul;
         color: $blanco;
+        &:hover{
+            color: $blanco;
+        }
     }
     &-mnbluelight{
         background-color: $azul/0.3;
@@ -173,6 +227,10 @@ a{
 @media screen and (max-width: 426px) {
     body{
         margin-top: 4rem;
+    }
+
+    nav{
+        min-height: 4.5rem;
     }
 
     .titulo{
@@ -221,7 +279,7 @@ a{
 
 .menu-imagen::before{
     content: "";
-    width: 100%;
+    width: 99%;
     height: 100%;
     background-color: black;
     position: absolute;
@@ -258,4 +316,9 @@ img.red-social{
     width: 1rem;
     height: 1rem;
 
+}
+
+img.clientes{
+    width: 300px;
+    height: 200px;
 }

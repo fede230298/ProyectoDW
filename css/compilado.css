@@ -47,13 +47,29 @@
 
 .titulo-subtitulo {
   color: #deb887;
+  font-size: 1.5rem;
   text-align: center; }
 
+.titulo-oscuro {
+  color: #ffa500;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold; }
+
 /*Estilos generales*/
-a {
-  color: inherit; }
-  a:hover {
-    color: #000;
+body {
+  font-family: 'Quicksand', sans-serif; }
+
+nav a {
+  color: #ffffff; }
+  nav a:hover {
+    color: #ffa500;
+    text-decoration: none; }
+
+footer a {
+  color: #ffffff; }
+  footer a:hover {
+    color: #ffffff;
     text-decoration: none; }
 
 .container > .row {
@@ -109,6 +125,31 @@ a {
   border-color: #ffa500;
   pointer-events: none; }
 
+/*Tarjetas*/
+#team img {
+  margin-top: -30px; }
+
+#team .card {
+  border-radius: 0;
+  box-shadow: 5px 5px 15px #808080;
+  transition: all 0.3s ease-in; }
+
+#team .card:hover {
+  background: #191970;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px #808080; }
+
+.card-name {
+  color: #ffa500; }
+
+.card-puesto {
+  color: #deb887; }
+
+#personal {
+  margin-top: -30px; }
+
 /*Clientes*/
 .sec-clientes > a {
   transition: filter 0.4s; }
@@ -127,6 +168,8 @@ a {
 .bg-mnblue {
   background-color: #191970;
   color: #ffffff; }
+  .bg-mnblue:hover {
+    color: #ffffff; }
 
 .bg-mnbluelight {
   background-color: #5353ff;
@@ -136,6 +179,8 @@ a {
 @media screen and (max-width: 426px) {
   body {
     margin-top: 4rem; }
+  nav {
+    min-height: 4.5rem; }
   .titulo-principal {
     font-size: 4rem; }
     .titulo-principal-variante {
@@ -167,7 +212,7 @@ a {
 
 .menu-imagen::before {
   content: "";
-  width: 100%;
+  width: 99%;
   height: 100%;
   background-color: black;
   position: absolute;
@@ -195,3 +240,7 @@ img.nav-logo {
 img.red-social {
   width: 1rem;
   height: 1rem; }
+
+img.clientes {
+  width: 300px;
+  height: 200px; }

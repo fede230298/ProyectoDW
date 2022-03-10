@@ -12,11 +12,14 @@
     <meta name="keywords" content="CONTACTO, SERVICIO, CARRERA, PREGUNTA">
     <link rel="icon" type="image/x-icon" href="../img/MT_Linguam.jpg">
     <meta name="theme-color" content="#0c0c70">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
  
 <body class="bg-light">
   <!--Navbar-->
-  <nav class=" navbar navbar-expand-md navbar-dark bg-mnblue fixed-top navbar-main">
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-mnblue fixed-top navbar-main">
     <div class="container">
       <!--Logo-->
       <a class="navbar-brand d-none d-md-block d-xl-block" href="../index.html">
@@ -37,8 +40,8 @@
         <div class="nav ml-auto text-white flex-column flex-md-row change">
           <a href="../index.html" class="nav-link change">Inicio</a>
           <a href="servicios.html" class="nav-link change">Servicios</a>
-          <a href="contacto.html" class="nav-link active">Contacto</a>
           <a href="carreras.html" class="nav-link change">Carreras</a>
+          <a href="contacto.html" class="nav-link active">Contacto</a>
           <a href="nosotros.html" class="nav-link change">Nosotros</a>
         </div>
       </div>
@@ -47,11 +50,14 @@
   <!--Fromulario-->
   <section class="container animacion">
     <div class="row align-items-center section-main col-12">
+      <!--Titulo formulario-->
       <h3 class="text-center col-12 display-4 titulo-principal-variante">Formulario de contacto</h3>
-      <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas, provident velit iure aliquid nisi, facilis corrupti ea praesentium iste tempora ipsam facere sint fuga inventore excepturi veritatis quisquam! Aliquam?</p>
+      <p class="lead text-center">Cuentanos que necesitas y te contactaremos a la brevedad</p>
+      <!--Cuerpo del forumlario-->
       <div class="row col-12">
         <div class="col-12">
           <form action="">
+            <!--Opciones desplegables-->
             <div class="form-group row">
               <label for="tipo" class="col-12 col-md-3 col-form-label">Motivo de contacto: </label>
               <select name="tipo" class="col-12 col-md-6">
@@ -75,26 +81,32 @@
                 </optgroup>
               </select>
             </div>
+            <!--Nombre-->
             <div class="form-group row">
               <label for="" class="col-12 col-md-3 col-form-label">Nombre:</label>
               <input type="text" placeholder="Escriba su nombre" class="form-control col-12 col-md-8" name="" id="">
             </div>
+            <!--Apellido-->
             <div class="form-group row">
               <label for="" class="col-12 col-md-3 col-form-label">Apellido:</label>
               <input type="text" placeholder="Escriba su apellido" class="form-control col-12 col-md-8" name="" id="">
             </div>
+            <!--Mail-->
             <div class="form-group row">
               <label for="" class="col-12 col-md-3 col-form-label">Email:</label>
               <input type="email" placeholder="Escriba su email" class="form-control col-12 col-md-8" name="" id="">
             </div>
+            <!--Mensaje-->
             <div class="form-group row">
               <label for="" class="col-12 col-md-3 col-form-label">Mensaje:</label>
               <textarea class="form-control col-12 col-md-8"></textarea>
             </div>
-            <div>
-              <input type="checkbox" name="newsletter" id="newsletter" value="si">
-              <label for="newsletter">Quiero recibir el Newsletter semanal</label>
+            <!--Checkbox-->
+            <div class="form-group form-check">
+              <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter" value="si">
+              <label class="form-check-label" for="newsletter"> Suscribirme al Newsletter</label>
             </div>
+            <!--Enviar-->
             <div class="form-group">
               <button class="boton boton-naranja">Enviar</button>
             </div>

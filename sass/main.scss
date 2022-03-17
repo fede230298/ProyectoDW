@@ -34,29 +34,29 @@ $colores: (
 
 /*Titulos*/
 .titulo{
-
+    text-align: center;
     &-principal{
+        @extend .titulo;
         color: $naranja;
-        text-align: center;
         &-variante{
+            @extend .titulo;
             color: $naranja;
-            text-align: center;
         }
     }
     &-secundario{
+        @extend .titulo;
         color: $azul;
-        text-align: center;
     }
     &-subtitulo{
+        @extend .titulo;
         color: $naranja-claro;
         font-size: 1.5rem;
-        text-align: center;
     }
 
     &-oscuro{
+        @extend .titulo;
         color: $naranja;
         font-size: 1.5rem;
-        text-align: center;
         font-weight: bold;
     }
     
@@ -67,11 +67,29 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
-nav a{
+nav div div a{
+    position: relative;
     color: $blanco;
+    text-decoration: none;
+    padding: 0 10px;
+
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: $naranja;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: 1px;
+        transition: 0.3s;
+    }
+
+    &:hover:after{
+        width: 100%;
+    }
+
     &:hover{
         color: $naranja;
-        text-decoration: none;
     }
 }
 
@@ -96,9 +114,7 @@ footer a{
     }
     
     &-main .active{
-        text-decoration: underline;
-        text-decoration-color: $naranja;
-        text-underline-offset: 9px;
+        color: $naranja;
     }
 }
 
@@ -232,57 +248,7 @@ footer a{
     }
 }
 
-/*mediaquery*/
-@media screen and (max-width: 426px) {
-    body{
-        margin-top: 4rem;
-    }
-
-    nav{
-        min-height: 4.5rem;
-    }
-
-    .titulo{
-        &-principal{
-        font-size: 4rem;
-            &-variante{
-                font-size: 3rem;
-            }
-        }
-
-        &-secundario{
-        font-size: 2.5rem;
-        }
-    }
-
-    .header-main{
-        min-height: 5vh;
-    }
-    
-    img.carreras{
-        width: 100px;
-        height: 100px;
-        float: inline-end;
-        margin: auto;
-        border: 0.25rem solid $azul;
-    }
-
-    footer a{
-        font-size: 0%;
-    }
-
-}
-
-@media screen and (min-width: 426px){
-    img.carreras{
-        width: 200px;
-        height: 200px;
-        float: inline-end;
-        margin: auto;
-        border: 0.5rem solid $azul;
-    }
-}
-
+//Imagen menú
 .menu-imagen{
     background-image: url("https://ep01.epimg.net/elviajero/imagenes/2018/07/31/album/1533036263_013678_1533077023_noticia_normal.jpg");
     width: auto;
@@ -294,7 +260,7 @@ footer a{
     content: "";
     width: 99%;
     height: 100%;
-    background-color: black;
+    background-color: $negro;
     position: absolute;
     opacity: 0.70;
     filter: blur(30px);
@@ -334,3 +300,74 @@ img.clientes{
     width: 300px;
     height: 200px;
 }
+
+/*mediaquery*/
+@media screen and (max-width: 426px) {
+    body{
+        margin-top: 4rem;
+    }
+
+    nav{
+        min-height: 4.5rem;
+    }
+
+    .titulo{
+        &-principal{
+        font-size: 4rem;
+            &-variante{
+                font-size: 3rem;
+            }
+        }
+
+        &-secundario{
+        font-size: 2.5rem;
+        }
+    }
+
+    .header-main{
+        min-height: 5vh;
+    }
+    
+    img.carreras{
+        width: 100px;
+        height: 100px;
+        float: inline-end;
+        margin: auto;
+        border: 0.25rem solid $azul;
+    }
+
+    footer a{
+        font-size: 0%;
+    }
+
+    .menu-imagen{
+        background-image: url("https://ep01.epimg.net/elviajero/imagenes/2018/07/31/album/1533036263_013678_1533077023_noticia_normal.jpg");
+        width: auto;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .menu-imagen::before{
+        content: "";
+        width: 95%;
+        height: 100%;
+        background-color: $negro;
+        position: absolute;
+        opacity: 0.65;
+        filter: blur(10px);
+    
+    }
+
+}
+
+@media screen and (min-width: 426px){
+    img.carreras{
+        width: 200px;
+        height: 200px;
+        float: inline-end;
+        margin: auto;
+        border: 0.5rem solid $azul;
+    }
+}
+
+
